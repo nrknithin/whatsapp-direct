@@ -1,0 +1,19 @@
+{
+  "name": "Whatsapp Direct",
+  "short_name": "WD",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "sizes": "16x16", "type": "image/png", "src": "/assets/icons/16.png", "purpose": "any" },
+    { "sizes": "32x32", "type": "image/png", "src": "/assets/icons/32.png", "purpose": "any" },
+    { "sizes": "64x64", "type": "image/png", "src": "/assets/icons/64.png", "purpose": "any" },
+    { "sizes": "128x128", "type": "image/png", "src": "/assets/icons/128.png", "purpose": "any" },
+    { "sizes": "256x256", "type": "image/png", "src": "/assets/icons/256.png", "purpose": "any" },
+    { "sizes": "512x512", "type": "image/png", "src": "/assets/icons/512.png", "purpose": "any" },
+    { "sizes": "1024x1024", "type": "image/png", "src": "/assets/icons/1024.png", "purpose": "any" },
+    { "sizes": "1024x1024", "type": "image/png", "src": "/assets/icons/logo.png", "purpose": "maskable" }
+  ]
+}
