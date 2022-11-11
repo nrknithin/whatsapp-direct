@@ -41,13 +41,9 @@
             <form class='m-5 w-100' id='form'>
                 <label for="number" class='mb-2 fw-bold' title='Whatsapp Number'>Phone number</label>
                 <span class='input-group mb-2' id='number' style='min-height:60px; font-size:20px'>
-                    <select class='form-select' style='max-width: 80px;' required id='phcode'>
-                        <option value='91' selected>
-                            +91
-                        </option>
-                    </select>
+
                     <input type='number' id="phnumber" pattern="[0-9]*" inputmode="numeric" class='form-control'
-                        required />
+                        required placeholder='Phone Number' />
                 </span>
                 <div class='d-flex justify-content-center'>
                     <button class='btn btn-success p-3 fw-bolder' type='submit' style='font-size: 24px;'>Open in
@@ -59,11 +55,10 @@
     <script>
         document.getElementById("form").addEventListener("submit", function (event) {
             event.preventDefault();
-            let phcode = document.getElementById("phcode").value
             let phnumber = document.getElementById("phnumber").value
-            if (phnumber.toString().length !== 10) { alert("Invalid Phone Number"); return }
+            // if (phnumber.toString().length !== 10) { alert("Invalid Phone Number"); return }
             window.open(
-                `https://api.whatsapp.com/send?phone=${phcode}${phnumber}`,
+                `https://api.whatsapp.com/send?phone=${phnumber}`,
                 '_blank' // <- This is what makes it open in a new window.
             );
         });
